@@ -16,7 +16,9 @@ while line != "exit":
     # TODO Else, break number up into area code, prefix, and suffic
     else:
         phone = ''.join(num for num in line if num.isalnum())
+        print('This is phone', phone)
         area = phone[:3]
+        print('The area', area)
         prefix = phone[3:6]
         suffix = phone[6:]
         print(
