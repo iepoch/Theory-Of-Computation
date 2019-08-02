@@ -4,7 +4,7 @@ import re  # module for processing regular expressions https://docs.python.org/3
 line = input("Enter a phone number to validate or 'exit' when done. ")
 
 # TODO Define your regex
-pattern = r"[0-9]{3}[-][0-9]{3}[-][0-9]{4}|[0-9]{10}|[(][0-9]{3}[)]\s[0-9]{3}[-][0-9]{4}|[0-9]{3}\s[0-9]{3}\s[0-9]{4}"
+pattern = r"[0-9]{3}[-][0-9]{3}[-][0-9]{4}"
 
 while line != "exit":
     # TODO Find matches
@@ -20,7 +20,7 @@ while line != "exit":
         prefix = phone[3:6]
         suffix = phone[6:]
         print(
-            f'Found phone Area Code: {area}, Prefix: {prefix}, Suffix: {suffix}')
+            f'Found phone Area Code: {area}, Prefix: {prefix}, Suffix: {suffix} \n')
     # As a stretch goal, you can modify your regex to search for country codes
     # too and print that out as well!
 
