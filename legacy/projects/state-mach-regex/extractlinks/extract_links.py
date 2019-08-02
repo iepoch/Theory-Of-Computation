@@ -17,10 +17,10 @@ with open(filename, 'r', encoding='utf-8') as f:
 f.close()
 
 # TODO Set up regex
-links = re.findall("((http|ftp)s?:\/\/.*?)", html)
+matches = re.findall(r'((https):\/\/[^\s"]+)', html)
 
 # TODO Find links using regex, save in list called 'matches'
-print(links)
+print(matches)
 # Check matches, print results
 # TODO Read in links from answers.txt (hint...this is a CSV file),
 # save in list called 'answer_data'
