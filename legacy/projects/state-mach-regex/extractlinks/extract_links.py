@@ -11,16 +11,15 @@ if __name__ == '__main__':
 filename = sys.argv[1]
 
 # TODO Read HTML file
-with open(filename, 'r') as f:
+with open(filename, 'r', encoding='utf-8') as f:
     html = f.read()
 
 f.close()
 
 # TODO Set up regex
-links = re.findall('"((http|ftp)s?://.*?)"', html)
+links = re.findall("((http|ftp)s?:\/\/.*?)", html)
 
 # TODO Find links using regex, save in list called 'matches'
-
 print(links)
 # Check matches, print results
 # TODO Read in links from answers.txt (hint...this is a CSV file),
