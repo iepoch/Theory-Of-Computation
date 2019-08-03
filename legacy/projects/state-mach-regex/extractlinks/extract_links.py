@@ -17,7 +17,7 @@ with open(filename, 'r', encoding='utf-8') as f:
 f.close()
 
 # TODO Set up regex
-matches = re.findall(r'https:\/\/[^$\s"]+', html)
+matches = re.findall(r'https:\/\/[^$\s"\']+', html)
 
 # TODO Find links using regex, save in list called 'matches'
 for match in matches:
