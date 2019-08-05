@@ -1,4 +1,5 @@
 import re  # module for processing regular expressions https://docs.python.org/3/library/re.html
+import csv
 
 # Initial prompt to user
 line = input("Enter a phone number to validate or 'exit' when done. ")
