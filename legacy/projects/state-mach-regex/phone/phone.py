@@ -5,7 +5,7 @@ import csv
 line = input("Enter a phone number to validate or 'exit' when done. ")
 
 # TODO Define your regex
-pattern = r"[0-9]{3}[-][0-9]{3}[-][0-9]{4}"
+pattern = r"[0-9]{3}[-][0-9]{3}[-][0-9]{4}|[0-9]{10}|[(][0-9]{3}[)]\s[0-9]{3}[-][0-9]{4}|[0-9]{3}\s[0-9]{3}\s[0-9]{4}"
 
 while line != "exit":
     # TODO Find matches
